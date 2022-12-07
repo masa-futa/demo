@@ -1,7 +1,7 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 /// Provider
-final provider = Provider<String>((ref) => "hello");
+final provider = Provider<String>((ref) => throw UnimplementedError());
 
 /// StateProvider
 final stateProvider = StateProvider<int>((ref) => 0);
