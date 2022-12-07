@@ -105,13 +105,21 @@ class Basic {
 
 
 /// クラス
-class Person {
+class Person: BasicUsecase {
     var name: String
     var age: Int
     
     init(name: String, age: Int) {
         self.name = name
         self.age = age
+    }
+    
+    func add() {
+        print("add")
+    }
+    
+    func remove() {
+        print("remove")
     }
 }
 
@@ -132,4 +140,10 @@ extension Vector2D {
     func length() -> Double {
         return sqrt(Double(x * x + y * y))
     }
+}
+
+/// interface
+protocol BasicUsecase {
+    func add()
+    func remove()
 }
