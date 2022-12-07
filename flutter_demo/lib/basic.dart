@@ -50,3 +50,22 @@ class Person {
 
   Person(this.name, this.age);
 }
+
+/// 拡張
+extension PersonExtension on Person {
+  void add(String name, int age) {
+    print(name);
+    print(age);
+  }
+}
+
+/// Enum
+enum Fruit {
+  apple,
+  banana,
+}
+
+/// interface
+abstract class Test {
+  void add();
+}
