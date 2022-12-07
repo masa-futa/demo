@@ -34,6 +34,13 @@ class Basic {
     await Future.delayed(const Duration(milliseconds: 300));
     return "";
   }
+
+  /// アンラップ処理
+  void rap(String? name) {
+    if (name != null) {
+      print(name);
+    }
+  }
 }
 
 /// クラス
